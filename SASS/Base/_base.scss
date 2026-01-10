@@ -11,9 +11,14 @@ h1 {
   font-size: $size-title;
 }
 
-h2, h3 {
+h2{
   font-family: $font-text;
-  font-size: $Size-title_2;
+  font-size: $Size-title;
+}
+
+h3 {
+  font-family: $font-text;
+  font-size: $Size-title;
 }
 
 ul {
@@ -21,14 +26,25 @@ ul {
 
 }
 
+a{
+  text-decoration : none;
+}
+
 body {
   width: 100%;
   font-family: $font-text;
   font-size: $size-text;
+  display: flex;
   flex-direction: column;
+}
+
+main {
+  background-color: $color-grey2;
 }
 
 .restaurant{
   margin: 30px;
+  gap : 20px;
+
 }
 

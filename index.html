@@ -19,7 +19,7 @@
 
   <body>
     <header>
-      <img src="Assets/images/logo/ohmyfood@2x.svg" alt="Logo_Ohmyfood" />
+      <img src="Assets/images/logo/ohmyfood.png" alt="Logo_Ohmyfood" />
 
       <div class="search-barre">
         <form action="#" method="get">
@@ -81,19 +81,22 @@
     </header>
 
     <main>
-      <h2>Restaurants</h2>
-
       <section class="restaurant">
+        <h2>Restaurants</h2>
+
         <a href="#">
           <article class="restaurant__card">
             <img
+              class="restaurant__card__img"
               src="Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
               alt="assiette la palette du gout"
             />
 
-            <div class="restaurant__content">
-              <div class="restaurant__text">
+            <div class="restaurant__card__content">
+              <div class="restaurant__card__content__title">
                 <h3>La palette du goût</h3>
+              </div>
+              <div class="restaurant__card__content__text">
                 <p>Ménilmontant</p>
               </div>
             </div>
@@ -103,13 +106,16 @@
         <a href="#">
           <article class="restaurant__card">
             <img
+              class="restaurant__card__img"
               src="Assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
               alt="plat boulette"
             />
-            <div class="restaurant__content">
-              <div class="restaurant__text">
+            <div class="restaurant__card__content">
+              <div class="restaurant__card__content__title">
                 <h3>La note enchantée</h3>
-                <p>Charonne</p>
+                <div class="restaurant__card__content__text">
+                  <p>Charonne</p>
+                </div>
               </div>
             </div>
           </article>
@@ -118,12 +124,15 @@
         <a href="#">
           <article class="restaurant__card">
             <img
+              class="restaurant__card__img"
               src="Assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
               alt="plat poisson allongé"
             />
-            <div class="restaurant__content">
-              <div class="restaurant__text">
+            <div class="restaurant__card__content">
+              <div class="restaurant__card__content__title">
                 <h3>Le délice des sens</h3>
+              </div>
+              <div class="restaurant__card__content__text">
                 <p>Folie-Méricourt</p>
               </div>
             </div>
@@ -135,7 +144,7 @@
     <footer>
       <p>Ohmyfood</p>
 
-      <ul>
+      <ul class="footer__list">
         <li>
           <a href="#">
             <i class="fa-solid fa-utensils"></i>

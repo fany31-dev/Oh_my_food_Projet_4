@@ -1,0 +1,30 @@
+//HTML General//
+//-----------------
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: $font-text;
+  font-size: $size-title;
+}
+
+h2, h3 {
+  font-family: $font-text;
+  font-size: $Size-title_2;
+}
+
+ul {
+  list-style-type:none;
+
+}
+
+body {
+  width: 100%;
+  font-family: $font-text;
+  font-size: $size-text;
+  flex-direction: column;
+}
+

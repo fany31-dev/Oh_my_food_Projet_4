@@ -13,7 +13,7 @@ footer {
   }
 
   i{
-    padding-right:7px;
+    padding-right: 5px;
   }
 
   a {
@@ -37,7 +37,7 @@ footer {
 @media (min-width: 768px) { 
   
 footer {
-  height: 190px;
+  height: 100px;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;

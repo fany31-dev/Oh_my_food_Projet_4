@@ -1,15 +1,66 @@
 .nav {
-  padding: 20px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 
-  &__list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  &__items{
+  max-width:400px;
+  height:80px;
+  background-color: $color-backgd-grey;
+  border-radius: 20px;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 50px;
+  gap: 15px;
+  margin: 20px 0;
   }
-  &__item {
-    width: 100%;
+
+  &__number{
+    width : 15px;
+    height: 15px;
+    size: 16px;    
+    border: 2px solid $color-primary;
+    border-radius : 50%;
+    background-color: $color-primary;
+    color: $color-btn;
+    @include flexbox-center;
+    padding : 20px;
+    position:absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
+
+    p{
+    font-size: 18px;
+    font-weight: 500;
+    }
+  }
+
+  &__content{
+    max-width: 400px;
+    @include flexbox-center;
+    flex-direction: row;
+    padding: 10px;
+    gap : 10px;
+
+      p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    }
+  }
+
+  i{
+    font-size: 18px;
+    color:$color-primary;
+    padding-left: 25px;
   }
 
 }
-

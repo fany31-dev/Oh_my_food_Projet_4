@@ -186,7 +186,8 @@ main {
 .nav__items {
   max-width: 400px;
   height: 80px;
-  background-color: #F6F6F6;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
   font-weight: 500;
   position: relative;

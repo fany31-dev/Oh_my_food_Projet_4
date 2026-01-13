@@ -28,4 +28,11 @@ transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 
+/****** Media queries ***********/
+/* Medium devices (tablets desktop, >768px) */
+@media (min-width: 768px) { 
 
+.btn__header{
+  margin-bottom: 30px;
+}
+}

@@ -54,7 +54,7 @@ main {
 }
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets desktop, >768px) */
 @media (min-width: 768px) {
   .restaurant {
     display: grid;
@@ -63,9 +63,6 @@ main {
     justify-content: center;
     padding: 0 60px 60px 60px;
     gap: 25px;
-  }
-  h2 {
-    padding-left: 80px;
   }
 }
 .btn {
@@ -99,6 +96,13 @@ main {
   transition: filter 0.3s ease, box-shadow 0.3s ease;
 }
 
+/****** Media queries ***********/
+/* Medium devices (tablets desktop, >768px) */
+@media (min-width: 768px) {
+  .btn__header {
+    margin-bottom: 30px;
+  }
+}
 .restaurant__card {
   width: 100%;
   height: 375px;
@@ -241,6 +245,21 @@ main {
   padding-left: 25px;
 }
 
+/****** Media queries ***********/
+/* Medium devices (tablets desktop, >768px) */
+@media (min-width: 768px) {
+  .nav {
+    align-items: normal;
+  }
+  .nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 50px;
+    padding-right: 180px;
+    padding-bottom: 50px;
+    padding-left: 180px;
+  }
+}
 .search-barre {
   display: flex;
   gap: 25px;
@@ -279,6 +298,14 @@ placeholder {
   font-size: 24px;
 }
 
+/****** Media queries ***********/
+/* Medium devices (tablets desktop, >768px) */
+@media (min-width: 768px) {
+  .information h2 {
+    font-weight: 700;
+    font-size: 30px;
+  }
+}
 footer {
   height: 180px;
   color: white;

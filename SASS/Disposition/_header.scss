@@ -36,3 +36,16 @@ placeholder{
   font-size: $size-title;
   }
 }
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets desktop, >768px) */
+@media (min-width: 768px) { 
+
+.information{
+  h2{
+  font-weight: 700;
+  font-size: 30px;
+  }
+}
+}

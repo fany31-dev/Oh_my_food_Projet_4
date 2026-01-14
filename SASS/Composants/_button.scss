@@ -19,12 +19,11 @@
   background: $gradient;
   margin-top: 30px;
   margin-bottom: 60px;
-}
-
-.btn__header:hover{
-background: $gradient-hoover;
-box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-transition: filter 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease; //durée animation et accélération souhaitée//
+  &:hover{
+  background: $gradient-hoover;
+  box-shadow: 0 8px 30px 5px rgba(0, 0, 0, 0.40);//augmente ombre bouton//
+  }
 }
 
 

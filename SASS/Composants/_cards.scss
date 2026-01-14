@@ -19,6 +19,7 @@
     }
 
     &__content {
+    position:relative;
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
@@ -52,14 +53,36 @@
     text-align: center;
     }
 
-.restaurant__card__content__heart{
+    .restaurant__card__content__heart i{
     position: absolute;
     bottom: 20px;/* distance du bas */
     right: 20px; /* distance de la droite */
-    font-size: 30px;
-    color: 0.5px solid rgba(0, 0, 0, 0.685);
-    @include icone-coeur;
-}
+    font-size: 29px;
+    }
+
+    .heart-full{
+    font-size: 33px;
+    opacity:0;
+    color: $color-heart;
+    transition-property: all;
+    transition-duration: 0.3s ease;
+    bottom: 22px;/* distance du bas */
+    right: 22px; /* distance de la droite */
+    }
+
+    .heart-full:hover{
+    opacity:1;
+    }
+
+
+
+
+
+
+
+
+
+
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */

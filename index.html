@@ -81,7 +81,7 @@
     <main>
       <h2>Restaurants</h2>
 
-      <section class="restaurant">
+      <div class="restaurant">
         <a href="#">
           <article class="restaurant__card">
             <img
@@ -96,9 +96,10 @@
               </h3>
               <span class="restaurant__card__content__ville">Ménilmontant</span>
             </div>
-            <span class="restaurant__card__content__heart">
-              <i class="fa-regular fa-heart"></i>
-            </span>
+            <div class="restaurant__card__content__heart">
+              <i class="fa-regular fa-heart heart-empty"></i>
+              <i class="fa-solid fa-heart heart-full"></i>
+            </div>
           </article>
         </a>
 
@@ -116,9 +117,10 @@
               </h3>
               <span class="restaurant__card__content__ville">Charonne</span>
             </div>
-            <span class="restaurant__card__content__heart">
-              <i class="fa-regular fa-heart"></i>
-            </span>
+            <div class="restaurant__card__content__heart">
+              <i class="fa-regular fa-heart heart-empty"></i>
+              <i class="fa-solid fa-heart heart-full"></i>
+            </div>
           </article>
         </a>
 
@@ -133,9 +135,10 @@
               <h3 class="restaurant__card__content__title">A la française</h3>
               <span class="restaurant__card__content__ville">Cité Rouge</span>
             </div>
-            <span class="restaurant__card__content__heart">
-              <i class="fa-regular fa-heart"></i>
-            </span>
+            <div class="restaurant__card__content__heart">
+              <i class="fa-regular fa-heart heart-empty"></i>
+              <i class="fa-solid fa-heart heart-full"></i>
+            </div>
           </article>
         </a>
 
@@ -154,12 +157,13 @@
                 Folie-Méricourt
               </span>
             </div>
-            <span class="restaurant__card__content__heart">
-              <i class="fa-regular fa-heart"></i>
-            </span>
+            <div class="restaurant__card__content__heart">
+              <i class="fa-regular fa-heart heart-empty"></i>
+              <i class="fa-solid fa-heart heart-full"></i>
+            </div>
           </article>
         </a>
-      </section>
+      </div>
     </main>
 
     <footer>
@@ -180,7 +184,9 @@
         </li>
 
         <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="mailto:NOMDUMAIL@MAIL.COM">Contact</a>
+        </li>
       </ul>
     </footer>
   </body>

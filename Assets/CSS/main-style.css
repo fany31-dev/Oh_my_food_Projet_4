@@ -7,7 +7,6 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-size: 30px;
-  line-height: 100%;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
@@ -16,12 +15,19 @@ h1 {
 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  padding: 60px 40px 0px 40px;
+  padding-top: 50px;
+  padding-left: 30px;
 }
 
 h3 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+}
+
+p {
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 ul {
@@ -50,7 +56,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 40px;
+  padding: 30px;
 }
 
 /****** Media queries ***********/
@@ -74,8 +80,9 @@ main {
   border: none;
   cursor: pointer;
   background-color: #F6F6F6;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   border-radius: 25px;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  opacity: 1;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,8 +93,9 @@ main {
   color: #ffffff;
   border-radius: 50px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 60px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease;
 }
 .btn__header:hover {
@@ -104,7 +112,7 @@ main {
 }
 .restaurant__card {
   width: 100%;
-  height: 375px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -115,7 +123,7 @@ main {
 }
 .restaurant__card__img {
   width: 100%;
-  height: 300px;
+  height: 270px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   object-fit: cover;
@@ -124,9 +132,8 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
-  padding-left: 15px;
-  padding-top: 15px;
+  padding: 20px;
+  line-height: 1.2;
   position: relative;
 }
 .restaurant__card__content__text {
@@ -157,21 +164,20 @@ main {
   position: absolute;
   bottom: 20px; /* distance du bas */
   right: 20px; /* distance de la droite */
-  font-size: 29px;
+  font-size: 1.6em;
 }
 
 .heart-full {
   font-size: 33px;
   opacity: 0;
-  color: #9747FF;
+  background: -webkit-linear-gradient(181deg, #9356dc, #ff79da); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(181deg, #9356dc, #ff79da); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  color: transparent;
   transition-property: all;
   transition-duration: 0.3s ease;
   bottom: 22px; /* distance du bas */
   right: 22px; /* distance de la droite */
-}
-
-.heart-full:hover {
-  opacity: 1;
 }
 
 /****** Media queries ***********/
@@ -189,18 +195,23 @@ main {
     object-fit: cover;
     object-position: 0% 60%;
   }
+  .heart-full:hover {
+    opacity: 1;
+  }
 }
 .nav {
   width: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 40px;
+  padding-left: 20px;
+}
+.nav__list {
+  padding: 0px;
 }
 .nav__items {
-  max-width: 400px;
-  height: 80px;
   background-color: #EAEAEA;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border-radius: 20px;
@@ -226,7 +237,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   top: 50%;
   left: -15px;
@@ -252,8 +263,11 @@ main {
 }
 .nav i {
   font-size: 18px;
+  padding-left: 18px;
+  color: #7E7E7E;
+}
+.nav i:hover {
   color: #9356DC;
-  padding-left: 25px;
 }
 
 /****** Media queries ***********/
@@ -280,19 +294,30 @@ form {
   width: 100%;
   height: 50px;
   background-color: #EAEAEA;
-  border: 2px solid black;
+  box-shadow: 0 -6px 4px -4px rgba(0, 0, 0, 0.26), 0px 4px 4px 4px rgba(0, 0, 0, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-input {
+form i {
+  padding-left: 80px;
+  font-size: 20px;
+}
+form input {
   background-color: #EAEAEA;
+  outline: none;
   border: none;
-}
-
-placeholder {
-  color: black;
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  color: black;
+  padding-left: 20px;
+}
+form input::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 1;
 }
 
 .information {
@@ -306,6 +331,10 @@ placeholder {
 .information h2 {
   font-weight: 700;
   font-size: 24px;
+  padding-left: 0px;
+}
+.information p {
+  padding-top: 20px;
 }
 
 /****** Media queries ***********/

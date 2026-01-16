@@ -3,12 +3,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
   margin-bottom: 40px;
+  padding-left: 20px;
+
+  &__list{
+    padding:0px;
+  }
 
   &__items{
-  max-width:400px;
-  height:80px;
   background-color: $color-grey2;
   box-shadow: 0px 4px 15px 0px #00000026;
   border-radius: 20px;
@@ -33,7 +36,7 @@
     background-color: $color-primary;
     color: $color-btn;
     @include flexbox-center;
-    padding : 20px;
+    padding : 10px;
     position:absolute;
     top: 50%;
     left: -15px;
@@ -52,7 +55,7 @@
     padding: 10px;
     gap : 10px;
 
-      p{
+    p{
     font-size: 18px;
     font-weight: 500;
     padding: 10px;
@@ -61,9 +64,14 @@
 
   i{
     font-size: 18px;
+    padding-left: 18px;
+    color: $color-icone-grey;
+    &:hover{
     color:$color-primary;
-    padding-left: 25px;
+    }
   }
+
+
 
 }
 
@@ -76,10 +84,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 50px;
-  padding-right: 180px;
-  padding-bottom: 50px;
-  padding-left: 180px;
+    padding-right: 180px;
+    padding-bottom: 50px;
+    padding-left: 180px;
   }
   }
+
 }
 

@@ -3,3 +3,8 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin color-gradient{
+  background: -webkit-linear-gradient(28deg, #9356dc,#ff79da);/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(28deg, #9356dc,#ff79da);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}

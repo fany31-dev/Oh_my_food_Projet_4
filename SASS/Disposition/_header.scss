@@ -40,7 +40,7 @@ form{
   @include flexbox-center;
   text-align: center;
   flex-direction: column;
-  background-color: $color-grey2;
+  background-color: $color-backgd-grey;
   h2{
   font-weight: 700;
   font-size: $size-title;

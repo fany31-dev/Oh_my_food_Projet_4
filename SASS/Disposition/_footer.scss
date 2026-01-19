@@ -33,23 +33,40 @@ footer {
 }
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 768px) { 
+/* Medium devices (tablets, less/equal than 768px) */
+@media (min-width:768px) { 
   
 footer {
-  height: 100px;
+  height: 110px;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
-  padding : 0px 30px;
-
+  padding : 0px;
+  p {
+   padding : 20px;
+  }
 }
 
 .footer__list {
   display: flex;
   flex-direction: row;
-  gap: 25px;
-  padding : 20px
+  gap: 10px;
+  padding: 20px 10px;
+}
 }
 
+/****** Media queries ***********/
+/* Medium devices (desktop > 1024px) */
+@media (min-width:1024px) { 
+  
+footer {
+  p {
+   padding : 30px;
+  }
+}
+
+.footer__list {
+  gap: 20px;
+  padding: 30px 20px;
+}
 }

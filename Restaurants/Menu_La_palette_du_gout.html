@@ -1,24 +1,104 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
->>>>>>> d45e74ac8746037ebc9d35967910207e7ad7ad41
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../Assets/CSS/main-style.css" />
+    <title>OhMyFood_La_palette_du</title>
+  </head>
+
+  <body>
+    <header class="header-restaurants">
+      <div>
+        <a class="arrow-left" href="../index.html">
+          <i class="fa-solid fa-arrow-left"></i>
+        </a>
+      </div>
+      <div>
+        <img
+          class="logo"
+          src="/Assets/images/logo/ohmyfood.png"
+          alt="logo_Ohmyfood"
+        />
+      </div>
+    </header>
+
+    <main>
+      <div class="photo__entete">
+        <img
+          src="/Assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+          alt="asiette de saumon"
+        />
+      </div>
+      <section class="menu">
+        <div class="menu__heart">
+          <input type="checkbox" id="favori" />
+          <label for="favori">
+            <i class="fa-regular fa-heart menu__heart__empty"></i>
+            <i class="fa-solid fa-heart menu__heart__full"></i>
+          </label>
+        </div>
+
+        <h1>La palette du goût</h1>
+
+        <div>
+          <h2>Entrées</h2>
+
+          <a href="#">
+            <article>
+              <div class="card__plat">
+                <h3>Fricassée d'escargots</h3>
+                <p>Au piment d'Espelette</p>
+                <div class="card__plat__prix">
+                  25 <span><i class="fa-solid fa-euro-sign fa-sm"></i></span>
+                </div>
+                <div>
+                  <input type="checkbox" hidden id="Entrees1" />
+                  <label for="Entrees1" class="plat-click-zone"></label>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+
+        <div class="btn__commander">
+          <button class="btn btn__header">Commander</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Ohmyfood</p>
+
+      <ul class="footer__list">
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-utensils"></i>
+            Proposer un restaurant
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-handshake-angle"></i>
+            Devenir partenaire
+          </a>
+        </li>
+
+        <li><a href="#">Mentions légales</a></li>
+        <li>
+          <a href="mailto:NOMDUMAIL@MAIL.COM">Contact</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

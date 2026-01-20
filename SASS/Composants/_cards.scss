@@ -58,7 +58,6 @@
     font-size: 1.6em;
     }
 
-
     .heart-full{
     font-size: 33px;
     opacity:0;
@@ -72,6 +71,16 @@
     right: 22px; /* distance de la droite */
     }
 
+    .restaurant__card__content__heart input {
+    display: none;
+    }
+    .restaurant__card__content__heart input:checked + label .heart-full {
+    opacity: 1;
+    }
+
+    .restaurant__card__content__heart input:checked + label .heart-empty {
+    opacity: 0;
+    }
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */

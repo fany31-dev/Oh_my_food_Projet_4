@@ -3,7 +3,7 @@
   align-items: center;
   margin-top: 15px;
   margin-bottom: 40px;
-  padding-left: 40px;
+  padding-left: 20px;
   
   &__list{
     padding:15px;
@@ -54,7 +54,7 @@
   &__content{
     display:flex;
     align-items:center;
-    padding: 10px;
+    padding: 10px 0px;
     gap : 10px;
 
     p{
@@ -92,6 +92,10 @@
   ul {
   gap: 25px;
   }
+  &__content{
+  padding: 20px;
+
+  }
   }
   }
 
@@ -110,6 +114,9 @@
   display: flex;
   align-items: center;
   white-space: nowrap;
+  p{
+    padding: 20px;
+    }
   }
 
   }

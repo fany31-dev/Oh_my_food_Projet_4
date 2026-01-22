@@ -8,7 +8,7 @@
     border-radius: 15px;
     color:black;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    
+        
     &__img {
     width: 100%;
     height: 270px;
@@ -36,6 +36,7 @@
     }
     }
 }
+
 .restaurant__card__etiquette {
     width: 80px;
     height: 29px;
@@ -49,16 +50,16 @@
     font-size: $size-etiquette;
     padding: 5px;
     text-align: center;
-    }
+}
 
-    .restaurant__card__content__heart i{
+.restaurant__card__content__heart i{
     position: absolute;
     bottom: 20px;/* distance du bas */
     right: 20px; /* distance de la droite */
     font-size: 1.6em;
-    }
+}
 
-    .heart-full{
+.heart-full{
     font-size: 33px;
     opacity:0;
     background: -webkit-linear-gradient(181deg, #9356dc,#ff79da);/* Chrome 10-25, Safari 5.1-6 */
@@ -68,22 +69,24 @@
     transition: all 0.3s ease-in-out;
     bottom: 22px;/* distance du bas */
     right: 22px; /* distance de la droite */
-    }
+}
 
-    .restaurant__card__content__heart input {
+.restaurant__card__content__heart input {
     display: none;
-    }
-    .restaurant__card__content__heart input:checked + label .heart-full {
-    opacity: 1;
-    }
+}
 
-    .restaurant__card__content__heart input:checked + label .heart-empty {
+.restaurant__card__content__heart input:checked + label .heart-full {
+    opacity: 1;
+}
+
+.restaurant__card__content__heart input:checked + label .heart-empty {
     opacity: 0;
-    }
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) {
+
     .restaurant__card {
     width: 100%;
     height: auto;

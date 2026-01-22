@@ -32,14 +32,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 /****** Media queries ***********/
 /* Medium devices (tablets desktop, >768px) */
 @media (min-width: 768px) { 
-
-.btn__header{
-  margin-bottom: 30px;
-}
+  
+  .btn__header{
+    margin-bottom: 30px;
+  }
 }

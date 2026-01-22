@@ -18,11 +18,13 @@
     animation-delay: 1s;
 }
 
+
 /* Animation disparition loader */
 @keyframes hideLoader {
     0% { opacity: 1; }
     100% { opacity: 0; visibility: hidden; }
 }
+
 
 /* Animation apparition du site */
 @keyframes showContent {
@@ -30,11 +32,13 @@
     100% { opacity: 1; }
 }
 
+
 .flipping-cards {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
+
 
 .card {
     width: 60px;
@@ -51,6 +55,7 @@
     transform-style: preserve-3d;
     animation: flip 3s infinite;
 }
+
 
 .card:nth-child(1) {
     animation-delay: 0s;

@@ -686,7 +686,6 @@ footer__list {
   cursor: pointer;
   overflow: hidden;
   transform: translateX(0);
-  transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .list__plat h3 {
   width: 75%;
@@ -707,6 +706,11 @@ footer__list {
 .list__plat:hover .list__plat__check {
   transform: translateX(-40px);
   opacity: 1;
+}
+
+.list__plat:hover {
+  padding-right: 80px;
+  transition: padding-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 /* Transitions */
@@ -798,7 +802,7 @@ ul {
 /* Medium devices (desktop, >1024px) */
 @media (min-width: 1024px) {
   .menu {
-    margin: 0px 200px;
+    margin: 0px 180px;
   }
   .menu h1 {
     font-size: 30px;
@@ -815,7 +819,7 @@ ul {
 /* Medium devices (desktop, >1300px) */
 @media (min-width: 1300px) {
   .menu {
-    margin: 0px 400px;
+    margin: 0px 300px;
     max-width: 1200px;
   }
 }/*# sourceMappingURL=main-style.css.map */

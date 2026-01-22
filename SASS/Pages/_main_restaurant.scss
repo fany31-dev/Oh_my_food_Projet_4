@@ -85,7 +85,7 @@
 
 //**************************************// //**************************************// 
 //**************************************// //**************************************// 
-//****************card menu + animation card click**************//
+//*************** element du menu + animation validation**************//
 //**************************************//   
 
 .list__plat{
@@ -100,7 +100,6 @@
   cursor: pointer;
   overflow: hidden;
   transform: translateX(0);
-  transition: width 0.3s cubic-bezier(.25,.46,.45,.94);
   h3{
   width: 75%;
   font-weight: 500;
@@ -122,6 +121,11 @@
 .list__plat:hover .list__plat__check {
   transform: translateX(-40px); 
   opacity: 1;
+}
+
+.list__plat:hover {
+  padding-right: 80px; // espace pour laisser entrer le check//
+  transition: padding-right 0.3s cubic-bezier(.25,.46,.45,.94);
 }
 
 /* Transitions */
@@ -214,7 +218,7 @@ ul {
 /* Medium devices (desktop, >1024px) */
 @media (min-width: 1024px) {
 .menu{
-  margin: 0px 200px;
+  margin: 0px 180px;
   h1{
   font-size: $size-logo;
   }
@@ -234,6 +238,6 @@ ul {
 /* Medium devices (desktop, >1300px) */
 @media (min-width: 1300px) {
     .menu {
-        margin: 0px 400px;
+        margin: 0px 300px;
         max-width: 1200px;
     }    }

@@ -65,8 +65,7 @@
     background: linear-gradient(181deg, #9356dc,#ff79da);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
     background-clip: text;
     color: transparent;
-    transition-property: all;
-    transition-duration: 0.3s ease;
+    transition: all 0.3s ease-in-out;
     bottom: 22px;/* distance du bas */
     right: 22px; /* distance de la droite */
     }
@@ -86,7 +85,7 @@
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (min-width: 768px) {
     .restaurant__card {
-    width: auto;
+    width: 100%;
     height: auto;
 
     &__img {

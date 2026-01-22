@@ -1,0 +1,46 @@
+//**************************************// //**************************************// 
+//****************animation coeur favori**************//
+//**************************************//   
+.menu__heart{
+  position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  i{
+  position: absolute;
+  top: 8px;
+  left: 313px;
+  font-size: 1.2em;
+  }
+}
+
+.menu__heart input {
+  display: none;
+}
+
+.menu__heart__full {
+  opacity:0;
+  background: -webkit-linear-gradient(181deg, #9356dc,#ff79da);/* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(181deg, #9356dc,#ff79da);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+  background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover{
+  opacity:1;
+  transition: opacity 0.3s;
+  }
+}
+
+.menu__heart__empty {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.menu__heart input:checked + label .menu__heart__full {
+  opacity: 1;
+}
+    
+.menu__heart input:checked + label .menu__heart__empty {
+  opacity: 0;
+}
+

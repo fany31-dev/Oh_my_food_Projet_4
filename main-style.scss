@@ -4,9 +4,11 @@
 @import "SASS/Base/reset";
 @import "SASS/Base/base";
 
+@import "SASS/Composants/animation_heart";
 @import "SASS/Composants/button";
 @import "SASS/Composants/cards";
 @import "SASS/Composants/nav";
+@import "SASS/Composants/loader";
 
 @import "SASS/Disposition/header";
 @import "SASS/Disposition/footer";

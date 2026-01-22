@@ -19,7 +19,7 @@
   border-radius: 50px;
   background: $gradient;
   margin-top: 15px;
-  margin-bottom: 60px;
+  margin-bottom: 15px;
   box-shadow: 0px 4px 10px 0px #00000040;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.2s ease; //durée animation et accélération souhaitée//
   &:hover{
@@ -28,6 +28,13 @@
   }
 }
 
+.btn__commander{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  padding: 0px 40px
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets desktop, >768px) */

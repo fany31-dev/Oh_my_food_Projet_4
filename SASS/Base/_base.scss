@@ -70,7 +70,6 @@ main {
 .restaurant{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap : 90px;
   padding: 30px 60px;
 }
 
@@ -84,8 +83,8 @@ h2{
 }
 
 /****** Media queries ***********/
-/* Medium devices (desktop, >1024px) */
-@media (min-width: 1024px) {
+/* Medium devices (desktop, >1240px) */
+@media (min-width: 1240px) {
   .restaurant {
     padding: 30px 180px;
     }

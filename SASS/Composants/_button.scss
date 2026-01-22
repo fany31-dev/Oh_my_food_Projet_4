@@ -11,7 +11,7 @@
   border-radius: 25px;
   opacity:1;
   @include flexbox-center;
-  padding: 30px
+  padding: 0 40px;
 }
 
 .btn__header{
@@ -32,8 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
-  padding: 0px 40px
+
 }
 
 /****** Media queries ***********/

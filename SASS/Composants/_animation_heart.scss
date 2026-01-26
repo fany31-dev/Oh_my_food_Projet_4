@@ -9,7 +9,7 @@
   i{
   position: absolute;
   top: 8px;
-  left: 313px;
+  left: 300px;
   font-size: 1.2em;
   }
 }
@@ -27,7 +27,7 @@
   transition: all 0.3s ease-in-out;
   &:hover{
   opacity:1;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease-in-out;
   }
 }
 
@@ -44,3 +44,12 @@
   opacity: 0;
 }
 
+/****** Media queries ***********/
+/* Medium devices (desktop, >768px) */
+@media (min-width: 768px) { 
+  .menu__heart{
+    i{
+    left: 380px;
+    }
+  }
+}

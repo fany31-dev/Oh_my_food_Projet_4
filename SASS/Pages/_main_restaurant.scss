@@ -45,7 +45,6 @@
   object-fit: cover;
   position: relative;
   bottom: -40px;
-  object-position: 0% 60%;
 }
 
 //**************************************//
@@ -100,80 +99,22 @@
   box-sizing: border-box;
   cursor: pointer;
   overflow: hidden;
-  transform: translateX(0);
+  transition: padding-right 0.3s cubic-bezier(.25,.46,.45,.94);
   h3{
-  width: 75%;
+  width: 65%;
   font-weight: 500;
   padding-bottom: 5px;
   }
   p{
-  width: 75%;
+  width: 65%;
   font-weight: 300;
   font-size: 15px;
   }
 }
 
-/* Animation simultanée */
-
-.list__plat:hover .list__plat__prix {
-  transform: translateX(-80px); //*deplacement vers la gauche*//
-}
-
-.list__plat:hover .list__plat__check {
-  transform: translateX(-40px); 
-  opacity: 1;
-}
-
-.list__plat:hover {
-  padding-right: 80px; // espace pour laisser entrer le check//
-  transition: padding-right 0.3s cubic-bezier(.25,.46,.45,.94);
-}
-
-/* Transitions */
-.list__plat__prix,
-.list__plat__check {
-  transition: transform 0.3s cubic-bezier(.25,.46,.45,.94);
-  transform-origin: center;
-  opacity: 1;
-}
-
-.apparition {
-  opacity: 0; /* invisible au départ */
-  transform: translateY(-20px); /* décalage vers le haut */
-  animation: fadeSlideIn 3s forwards;
-}
-
-.apparition:nth-child(1) {
-  animation-delay: 6s; 
-}
-
-/* Définition de l'animation */
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-//*********************//
-
 ul {
   list-style-type: none;
   padding: 0px 20px;
-}
-
-.list__plat_texte{
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  width: 100%;
-  h3,
-  p{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  }
 }
 
 /* Positionnement initial */
@@ -189,11 +130,26 @@ ul {
   transition: transform 0.3s cubic-bezier(.25,.46,.45,.94);
 }
 
+.list__plat__texte{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  width: 100%;
+  transition: transform 0.3s cubic-bezier(.25,.46,.45,.94);
+  transform-origin: left center;
+  h3,
+  p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+}
+
 .list__plat__check {
   opacity: 0;
   position: absolute;
   top: 0px;
-  right: -40px;
+  right: -80px;
   width: 80px;
   height: 75px;
   display: flex;
@@ -210,35 +166,149 @@ ul {
 }
 
 
+//**************************************//
+/* Transitions */
+//**************************************//
+.list__plat__prix,
+.list__plat__check,
+.list__plat__texte {
+  transition: transform 0.3s cubic-bezier(.25,.46,.45,.94),
+              opacity 0.3s,
+              width 0.3s cubic-bezier(.25,.46,.45,.94);
+}
+
+
+//**************************************//
+/* Animation simultanée au HOVER*/
+//**************************************//
+
+.list__plat:hover .list__plat__prix {
+  transform: translateX(-80px); //*deplacement vers la gauche*//
+}
+
+.list__plat:hover .list__plat__check {
+  transform: translateX(-80px); 
+  opacity: 1;
+}
+
+
+//**************************************//
+/* Quand on clique au check */
+//**************************************//
+
+.list__plat input:checked ~ .list__plat__check {
+  transform: translateX(-80px);
+  opacity: 1;
+}
+
+.list__plat input:checked ~ .list__plat__prix {
+  transform: translateX(-80px);
+}
+
+.list__plat input:checked ~ .list__plat__texte {
+  width: calc(100% - 15px);
+}
+
+
+//**************************************//
+/* Apparition menu */
+//**************************************//
+.apparition,
+.apparition-1,
+.apparition-2 {
+  justify-content: center;
+  opacity: 0; /* invisible au départ */
+  transform: translateY(-40px); /* décalage vers le haut */
+  animation: fadeSlideIn 3s forwards;
+}
+
+.apparition {
+  animation-delay: 1s; 
+}
+
+.apparition-1 {
+  animation-delay: 3s; 
+}
+
+.apparition-2 {
+  animation-delay: 6s; 
+}
+
+/* Définition de l'animation */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+//*********************//
 
 //***************************************************************************// 
 /****** Media queries ***********/
-/* Medium devices (desktop, >1024px) */
-@media (min-width: 1024px) {
+
+/* Medium devices (tablet, >768px) */
+@media (min-width: 768px) {
 
   .menu{
-    margin: 0px 180px;
+    margin: 0px 80px;
     h1{
     font-size: $size-logo;
     }
   }
+
   .entete {
-  object-position: 0% 60%;
-  height: 400px;
+    height: 400px;
+    object-position: 0% 60%;
   }
 
- .position{
+  .position{
     justify-content: center;
   }
+
+  .apparition,
+  .apparition-1,
+  .apparition-2 {
+    margin: 0px 60px;
+  }
+}
+
+/* Medium devices (desktop, >1024px) */
+@media (min-width: 1024px) {
+
+  .menu{
+    margin: 0px 160px;
+    h1{
+    font-size: $size-logo;
+    }
+  }
+
+  .position{
+    justify-content: center;
+  }
+
+  .apparition,
+  .apparition-1,
+  .apparition-2 {
+    margin: 0px 100px;
+  }
+
 }
 
 //***************************************************************************// 
 /****** Media queries ***********/
-/* Medium devices (desktop, >1300px) */
-@media (min-width: 1300px) {
+/* Medium devices (desktop, >1240px) */
+@media (min-width: 1240px) {
 
   .menu {
-    margin: 0px 300px;
-    max-width: 1200px;
+    margin: 0px 220px;
+    max-width: 1400px;
+  }
+
+  .apparition,
+  .apparition-1,
+  .apparition-2 {
+    margin: 0px 180px;
   }
 }
